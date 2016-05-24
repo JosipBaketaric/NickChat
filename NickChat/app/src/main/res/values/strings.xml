@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NickChat</string>
+    <string name="appName">NickChat</string>
+    <string name="tvEnterEmail">e-mail:</string>
+    <string name="tvEnterPassword">Password:</string>
+    <string name="btnLoginText">Login</string>
+    <string name="btnRegisterText">Register</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btnSendText">Send</string>
+    <string name="btnSettingsText">Settings</string>
+</resources>

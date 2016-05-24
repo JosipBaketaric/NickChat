@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="hr.jbaketaricetfos.nickchat.Activitys.Activity.ChatArea">
+
+    <ImageView
+        android:id="@+id/ivChatAreaIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/nickchaticon" />
+
+    <ImageButton
+        android:id="@+id/btnSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/settingsbtn"
+        android:onClick="openSettings" />
+
+    <ListView
+        android:id="@+id/lvUsersOnline"
+        android:layout_width="@dimen/chat_area_rl_users_w"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:layout_below="@+id/ivChatAreaIcon"
+        android:layout_marginTop="50dp"/>
+
+    <ListView
+        android:id="@+id/lvChat"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:layout_below="@+id/ivChatAreaIcon"
+        android:layout_marginTop="50dp"/>
+
+
+    <Spinner
+        android:id="@+id/spinnerEmoji"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@id/etTextInput"/>
+
+
+    <EditText
+        android:id="@+id/etTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/btnSend"
+        android:background="@drawable/border_style" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chat_area_rl_btn_send_h"
+        android:layout_alignParentBottom="true"
+        android:onClick="sendMsg"
+        android:text="@string/btnSendText" />
+
+    <Button
+        android:id="@+id/btnRefreshUsers"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/lvUsersOnline"
+        android:text="Refresh"
+        android:textSize="10sp"
+        android:onClick="refreshOnlineUsers"/>
+
+
+</RelativeLayout>

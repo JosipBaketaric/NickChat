@@ -1,0 +1,16 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="chat_area_rl_users_w">100dp</dimen>
+    <dimen name="chat_area_rl_users_h">250dp</dimen>
+    <dimen name="chat_area_rl_messages_w">200dp</dimen>
+    <dimen name="chat_area_rl_messages_h">250dp</dimen>
+    <dimen name="chat_area_rl_sp_w">40dp</dimen>
+    <dimen name="chat_area_rl_sp_h">10dp</dimen>
+    <dimen name="chat_area_rl_sp_margin_top">10dp</dimen>
+    <dimen name="chat_area_rl_textInput_h">100dp</dimen>
+    <dimen name="chat_area__textI_h">50dp</dimen>
+    <dimen name="chat_area_rl_btn_send_h">40dp</dimen>
+</resources>
